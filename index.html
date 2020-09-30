@@ -21,10 +21,22 @@
             <span class="high-light">Try it free 7days</span> then $20/mo, thereafter
           </p></div>
           <form class="form__sign-up">
-            <input type="text" class="form__input form__input-text" placeholder="First Name" required>
-            <input type="text" class="form__input form__input-text" placeholder="Last Name" required>
-            <input type="email" class="form__input form__input-email" placeholder="Email Address" required>
-            <input type="password" class="form__input form__input-password" placeholder="Password" required>
+            <div class="form__group">
+              <input type="text" class="form__input form__input-text" placeholder="First Name" required>
+              <div class="form__invalid">First Name cannot be empty</div>
+            </div>
+            <div class="form__group">
+              <input type="text" class="form__input form__input-text" placeholder="Last Name" required>
+              <div class="form__invalid">Last Name cannot be empty</div>
+            </div>
+            <div class="form__group">
+              <input type="email" class="form__input form__input-email" placeholder="Email Address" required>
+              <div class="form__invalid">Looks like this is not an e-mail</div>
+            </div>
+            <div class="form__group">
+              <input type="password" class="form__input form__input-password" placeholder="Password" required>
+              <div class="form__invalid">Password cannot be empty</div>
+            </div>
             <button class="btn">claim your free trail</button>
             <p class="form__copy">By clicking this button you are to our <span class="high-light high-light--red">Terms and Services</span></p>
           </form>
