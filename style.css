@@ -38,7 +38,7 @@ body {
 }
 
 .form__center {
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -58,12 +58,15 @@ body {
     font-size: 6rem;
     color: white;
     letter-spacing: 0px;
+
+    margin-bottom: 2rem;
 }
 
 .form__left p {
     font-weight: 500;
     font-size: 1.5rem;
     color: white;
+    line-height: 4rem;
 }
 
 /* form right */
@@ -77,6 +80,8 @@ body {
     
     display: flex;
     justify-content: center;
+
+    box-shadow: 0 10px hsl(246, 25%, 77%, 0.5);
 }
 
 .form__sign-up {
@@ -86,6 +91,8 @@ body {
 
     display: flex;
     flex-direction: column;
+
+    box-shadow: 0 10px hsl(246, 25%, 77%, 0.5);
 }
 
 .form__input {
@@ -114,29 +121,12 @@ body {
     font-size: 2rem;
     border: none;
     border-radius: 5px;
+    margin-bottom: 1rem;
 
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.form__copy {
-    font-size: 1.4rem;
-}
-
-.form__invalid {
-    position: absolute;
-    right: 5px;
-    top: 45px;
-    display: none;
-    color: hsl(0, 100%, 74%);
-
-    font-size: 1.2rem;
-}
-
-.form__input:focus:invalid + .form__invalid {
-    display: block;
+    font-family: poppins;
 }
 
 .form__group {
@@ -145,6 +135,37 @@ body {
     flex-direction: column;
 
     position: relative;
+}
+
+.form__copy {
+    font-size: 1.4rem;
+    color: gray;
+}
+
+/* hidden animation */
+
+.form__hidden {
+    display: none;
+}
+
+.form__invalid {
+    position: absolute;
+    right: 5px;
+    top: 45px;
+    color: hsl(0, 100%, 74%);
+
+    font-size: 1.2rem;
+}
+
+.error__icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+}
+
+.form__input:focus:invalid + .form__hidden {
+    display: block;
 }
 
 
