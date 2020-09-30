@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* styles */
+
+body {
+    background-image: linear-gradient(to right bottom, rgba(255, 122, 122, 0.5), rgba(255, 122, 122, 0.5)), url(./img/bg-intro-desktop.png);
+    background-size: cover;
+    font-size: 1.6rem;
+}
+
+.high-light {
+    font-weight: 600;
+}
+
+.high-light--red {
+    color: hsl(0, 100%, 74%);
+}
+
+/* form flex containers */
+
+.container__form {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__center {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form__left, .form__right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+/* form left */
+
+.form__left h1 {
+    font-weight: 700;
+    font-size: 6rem;
+    color: white;
+    letter-spacing: 0px;
+}
+
+.form__left p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* form right */
+
+.form__top {
+    background-color: hsl(248, 32%, 49%);
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 2rem;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.form__sign-up {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.form__input:focus {
+    outline: none;
+    border: 2px solid black;
+}
+
+.form__input:focus:invalid {
+    background-color: orangered;
+}
+
+.btn {
+    background-color: hsl(154, 59%, 51%);
+    padding: 3rem;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.form__copy {
+    font-size: 1.4rem;
+}
+
